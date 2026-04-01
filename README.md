@@ -65,17 +65,52 @@ If you run into **any** issues while using this template, or have suggestions fo
 
 ### Running Locally (Debug & Preview)
 
-2. Follow the **step 1** and **step 2** of the instruction [here](https://jekyllrb.com/docs/) to install prerequisites and jekyll.
+2. Install Ruby and the Jekyll prerequisites by following the official guide [here](https://jekyllrb.com/docs/). On Windows, using RubyInstaller with MSYS2 is recommended.
 
 3. Clone your forked repository to your local machine.
 
-4. Run the following command in the root directory of the repository:
+4. Install the project dependencies in the root directory of the repository:
+
+   ```bash
+   bundle install
+   ```
+
+5. Start the local preview server:
 
    ```bash
    bundle exec jekyll serve
    ```
 
-5. Browse to the displayed URL to see the website.
+6. Open the displayed URL in your browser. This template uses a `baseurl`, so the local address is typically:
+
+   ```text
+   http://127.0.0.1:4000/academic-homepage/
+   ```
+
+#### Windows Notes
+
+- The `Gemfile` is configured to use the Ruby China mirror: `https://gems.ruby-china.com/`.
+- If `bundle` is not found in PowerShell even though Ruby is already installed, temporarily prepend the Ruby `bin` directory to `PATH` before running `bundle install` or `bundle exec jekyll serve`.
+- Example PowerShell commands:
+
+  ```powershell
+  $env:Path='C:\PROGRA~2\RUBY34~1\bin;'+$env:Path
+  bundle install
+  bundle exec jekyll serve --port 4001
+  ```
+
+- If your Ruby installation is under `C:\Program Files (x86)\...`, native gem compilation may fail because of the parentheses in the path. In that case, using the short path form such as `C:\PROGRA~2\...` can avoid build issues.
+- If port `4000` is already occupied, start Jekyll on another port, for example:
+
+  ```bash
+  bundle exec jekyll serve --port 4001
+  ```
+
+  Then open:
+
+  ```text
+  http://127.0.0.1:4001/academic-homepage/
+  ```
 
 ### Deploying to GitHub Pages
 

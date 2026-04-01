@@ -1,0 +1,37 @@
+Configuration file: E:/Area/03_Workspace/MyWebsite/anvalue.github.io_v0/_config.yml
+            Source: E:/Area/03_Workspace/MyWebsite/anvalue.github.io_v0
+       Destination: E:/Area/03_Workspace/MyWebsite/anvalue.github.io_v0/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.398 seconds.
+ Auto-regeneration: enabled for 'E:/Area/03_Workspace/MyWebsite/anvalue.github.io_v0'
+    Server address: http://127.0.0.1:4001/academic-homepage/
+  Server running... press ctrl-c to stop.
+[2026-04-01 16:47:08] ERROR '/' not found.
+[2026-04-01 16:47:27] ERROR '/' not found.
+[2026-04-01 16:47:43] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Users/Sheng/.local/share/gem/ruby/3.4.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in 'IO#eof?'
+	C:/Users/Sheng/.local/share/gem/ruby/3.4.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in 'WEBrick::HTTPServer#run'
+	C:/Users/Sheng/.local/share/gem/ruby/3.4.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in 'block in WEBrick::GenericServer#start_thread'
+[2026-04-01 16:50:37] ERROR '/favicon.ico' not found.
+      Regenerating: 1 file(s) changed at 2026-04-01 16:51:23
+                    README.md
+                    ...done in 0.4528082 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-01 16:51:30
+                    assets/images/photos/盛强证件照.jpg
+                    ...done in 0.5593303 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-01 16:51:43
+                    assets/images/photos/portrait.jpg
+                    ...done in 0.2223335 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-04-01 16:51:45
+                    assets/images/photos/portrait.jpg
+                    assets/images/photos/盛强证件照.jpg
+                    ...done in 0.2752197 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-01 16:53:57
+                    README.md
+                    ...done in 0.2689758 seconds.
+                    
